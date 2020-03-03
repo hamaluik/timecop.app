@@ -30,19 +30,19 @@ build: public/style.css $(HTMLS)
 
 clean:
 > rm -f public/style.css
-> rm -rf public/en
-> rm -rf public/fr
-> rm -rf public/de
-> rm -rf public/es
-> rm -rf public/hi
-> rm -rf public/id
-> rm -rf public/ja
-> rm -rf public/ko
-> rm -rf public/pt
-> rm -rf public/ru
-> rm -rf public/ar
-> rm -rf public/zh-CN
-> rm -rf public/zh-TW
+> rm -f public/en/*.html
+> rm -f public/fr/*.html
+> rm -f public/de/*.html
+> rm -f public/es/*.html
+> rm -f public/hi/*.html
+> rm -f public/id/*.html
+> rm -f public/ja/*.html
+> rm -f public/ko/*.html
+> rm -f public/pt/*.html
+> rm -f public/ru/*.html
+> rm -f public/ar/*.html
+> rm -f public/zh-CN/*.html
+> rm -f public/zh-TW/*.html
 .PHONY: clean
 
 public/style.css: $(shell find style -type f)
@@ -52,7 +52,7 @@ public/style.css: $(shell find style -type f)
 public/en/index.html: public/index.html
 > mkdir -p public/en public/en/images
 > cp public/index.html public/en/index.html
-> cp public/images/badge_google_play.png public/images/badge_app_store.svg public/images/timecop-screenshot-iphone-x.png public/images/timecop-screenshot-iphone-x-dark.png public/en/images/
+> cp public/images/google-play-badge.svg public/images/badge_app_store.svg public/images/timecop-screenshot-iphone-x.png public/images/timecop-screenshot-iphone-x-dark.png public/en/images/
 
 public/en/terms.html: public/terms.html
 > mkdir -p public/en public/en/images
