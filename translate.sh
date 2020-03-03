@@ -1,5 +1,4 @@
 #!/bin/bash
-exit 0
 SOURCE_FILE=$1
 TARGET=$2
 mkdir -p public/$TARGET
@@ -12,3 +11,4 @@ TRANSLATION=$(echo "$RESPONSE" | jq -rM ".translations[0].translatedText")
 #HTML=$(echo $TRANSLATION | sed -e "s/<html>/<html lang=$TARGET>/g")
 #echo $HTML > public/$TARGET/$SOURCE_FILE
 echo $TRANSLATION > public/$TARGET/$SOURCE_FILE
+sleep 1
