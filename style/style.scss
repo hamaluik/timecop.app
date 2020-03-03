@@ -20,14 +20,6 @@ p {
   line-height: 1.2;
 }
 
-p {
-  hyphens: auto;
-}
-
-p + p {
-  text-indent: 2em;
-}
-
 h2 {
   border-bottom: 1px solid rgba(128, 128, 128, 0.25);
   margin-bottom: 0.5em;
@@ -46,7 +38,7 @@ article {
   }
 
   ul, ol {
-    margin: 0 3em;
+    margin: 0 0 0 1em;
   }
 }
 
@@ -105,6 +97,14 @@ body {
   #copy {
     line-height: 1.5;
 
+    p {
+      hyphens: auto;
+    }
+
+    p + p {
+      text-indent: 2em;
+    }
+
     header {
       display: grid;
       gap: 0 0.25em;
@@ -152,7 +152,12 @@ body {
 
   footer {
     font-size: 12pt;
-    text-align: center;
+    width: 100%;
+
+    p {
+      margin-bottom: 1em;
+      text-align: center;
+    }
   }
 }
 
@@ -231,10 +236,6 @@ body {
         font-size: 36pt;
         border-bottom: 1px solid rgba(128, 128, 128, 0.25);
         margin-bottom: 0.5em;
-      }
-
-      ul, ol {
-        margin: 0 10em;
       }
     }
 

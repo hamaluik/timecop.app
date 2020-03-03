@@ -1,4 +1,5 @@
 #!/bin/bash
+exit 0
 SOURCE_FILE=$1
 TARGET=$2
 mkdir -p public/$TARGET
