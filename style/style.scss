@@ -153,6 +153,7 @@ body {
   footer {
     font-size: 12pt;
     width: 100%;
+    padding-top: 1em;
 
     p {
       margin-bottom: 1em;
@@ -308,6 +309,11 @@ body {
     footer {
       grid-row: 2;
       grid-column: 1/span2;
+    }
+    
+    article + footer {
+      border-top: 1px solid rgba(128, 128, 128, 0.25);
+      max-width: 40em * 18em / 12em;
     }
   }
 }
