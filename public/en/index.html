@@ -16,12 +16,24 @@
 </head>
 
 <body>
-    <a href="https://github.com/hamaluik/timecop"><img width="149" height="149" src="/images/forkme_right_lightbg.png" class="forkmeribbon light" alt="Fork me on GitHub" data-recalc-dims="1"></a>
-    <a href="https://github.com/hamaluik/timecop"><img width="149" height="149" src="/images/forkme_right_darkbg.png" class="forkmeribbon dark" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+    <a href="https://github.com/hamaluik/timecop">
+        <picture class="forkmeribbon">
+            <source type="image/webp" srcset="/images/forkme_right_darkbg.webp" media="(prefers-color-scheme: dark)">
+            <source type="image/png" srcset="/images/forkme_right_darkbg.png" media="(prefers-color-scheme: dark)">
+            <source type="image/webp" srcset="/images/forkme_right_lightbg.webp">
+            <source type="image/png" srcset="/images/forkme_right_lightbg.png">
+            <img width="149" height="149" src="/images/forkme_right_lightbg.png" alt="Fork me on GitHub">
+        </picture>
+    </a>
     <div id="container">
         <section id="screenshot">
-            <img class="light" src="images/timecop-screenshot-iphone-x.png" width="868" height="1743" alt="Screenshot of the main Time Cop dashboard on an iPhone X">
-            <img class="dark" src="images/timecop-screenshot-iphone-x-dark.png" width="868" height="1743" alt="Screenshot of the main Time Cop dashboard on an iPhone X (Dark Mode)">
+            <picture>
+                <source type="image/webp" srcset="images/timecop-screenshot-iphone-x-dark.webp" media="(prefers-color-scheme: dark)">
+                <source type="image/png" srcset="images/timecop-screenshot-iphone-x-dark.png" media="(prefers-color-scheme: dark)">
+                <source type="image/webp" srcset="images/timecop-screenshot-iphone-x.webp">
+                <source type="image/png" srcset="images/timecop-screenshot-iphone-x.png">
+                <img src="images/timecop-screenshot-iphone-x.png" width="868" height="1743" alt="Screenshot of the main Time Cop dashboard on an iPhone X">
+            </picture>
         </section>
         <section id="copy">
             <header>
