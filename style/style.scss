@@ -137,7 +137,6 @@ body {
     #stores {
       margin: 1em 0;
       display: flex;
-      gap: 0.5em 2em;
       align-items: center;
       justify-content: center;
       max-width: 100%;
@@ -146,6 +145,7 @@ body {
       img {
         width: auto;
         height: 80px;
+        margin: 0.25em 0.5em;
       }
     }
   }
@@ -224,6 +224,12 @@ body {
 
         p {
           font-size: 16pt;
+        }
+      }
+
+      #stores {
+        img {
+          height: 40px;
         }
       }
     }
